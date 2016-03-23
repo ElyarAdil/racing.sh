@@ -2,4 +2,4 @@
 
 A racing game in BASH
 
-![image](racing.sh.png)
+![image](screenshot/racing.sh.png)
