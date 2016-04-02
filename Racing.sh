@@ -13,7 +13,7 @@ BDR_B=14
 opp_exist=0
 death=0
 score=0
-
+echo -e "\33[1m"
 trap on_exit ERR EXIT 
 function on_exit() {
 	printf "\e[?9l"          # Turn off mouse reading
@@ -62,6 +62,7 @@ bdr_offset=0
 function die() {
 		clear
 		echo -e "\e[5;5HGAME OVER"
+		echo -e "\e[7;5HSCORE:" $score
 }
 function move() {
 	
